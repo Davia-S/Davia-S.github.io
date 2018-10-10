@@ -1,0 +1,104 @@
+.grid {
+    display: grid;
+    grid-template: repeat(5, auto) / 220px auto;
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-right: 100px;
+}
+#mypic {
+    width: 130px;
+    height: 150px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+
+}
+#heading {
+    grid-area: 1 / 1 / 2 / 3;
+    background-color: rgb(59, 163, 151);
+    color: white;
+    text-align: center;
+    vertical-align: central;
+    border: 3px solid white;
+}
+
+#sidebar{
+    grid-area: 2 / 1 / 6 / 2;
+    background-color: rgb(224, 221, 221);
+}
+
+#sideLine{
+    height: 2px;
+    width: 185px;
+    background-color: black;
+}
+
+#mainContent{
+    grid-area: 2 / 2 / 6 / 3;
+    display: grid;
+    padding-left: 15px;
+}
+#bio{
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+#work, hr{
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+    grid-template: repeat(3, auto) / 130px auto;
+}
+.WE{
+   grid-area: header;
+}
+work.years, hr{
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+work.position, education.position{
+    grid-area: 2 / 2 / 3 / 3;
+    display: inline;
+    vertical-align: top;
+}
+
+#education {
+    grid-area: 3 / 2 / 4 / 3;
+    display: grid;
+    grid-template: repeat(3, auto) / 130px auto;
+}
+
+.ed, education.years{
+    display: inline;
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#skills{
+    grid-area: 4 / 2 / 6 / 3;
+}
+
+hr{
+    height: 1px;
+    background-color: gray;
+}
+
+.fa-facebook {
+    background-color: #3B5998;
+    color: white;
+    font-size: 60px;
+}
+
+.fa-linkedIn {
+    background-color: #0077B5;
+    color: white;
+    font-size: 60px;
+}
+
+.fa-twitter {
+    color: #55acee;
+    font-size: 60px;
+}
+
+.fa-instagram {
+    font-size: 60px;
+}
+
